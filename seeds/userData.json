@@ -1,0 +1,27 @@
+[
+    {
+      "username": "samIam",
+      "email": "samIam@gmail.com",
+      "password": "pw1212"
+    },
+    {
+      "username": "LoRax",
+      "email": "lo-rax@gmail.com",
+      "password": "pw1213"
+    },
+    {
+      "username": "blueFish",
+      "email": "fishblue@aol.com",
+      "password": "pw1214"
+    },
+    {
+      "username": "hatcat",
+      "email": "cathat@msn.com",
+      "password": "pw1215"
+    },
+    {
+      "username": "redFish",
+      "email": "fishred@yahoo.com",
+      "password": "pw1216"
+    }
+  ]

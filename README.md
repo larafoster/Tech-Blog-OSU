@@ -13,9 +13,13 @@ The Tech Blog is a CMS-style blog site similar to a Wordpress site, where develo
   ## Installation
   Once you clone this repository, you will need to follow these steps:
   1. Connect to your mysql server. Create an .env file and store db name, user and password.
-  2. In your terminal, you will need to cd into the database folder and source the sql files.
+  2. In your terminal, you will need to cd into the database folder and source the sql files. To do this follow:
+      `mysql -u root -p` it will prompt for your password. Then type:
+      `source db\schema.sql` to source your database.
   3. Cd back to the path containing the index file and install the node modules, by running npm install.
-  4. To start the app, type 'node server' in the terminal.
+  4. There is a seed file to get started with prepopulated data. Simple type: 
+  `npm run seed` in the terminal.
+  5. To start the app, type `node server` in the terminal.
   
   ### Links
   Project Links:
