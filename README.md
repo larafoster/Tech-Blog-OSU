@@ -15,8 +15,7 @@ The Tech Blog is a CMS-style blog site similar to a Wordpress site, where develo
   1. Connect to your mysql server. Create an .env file and store db name, user and password.
   2. In your terminal, you will need to cd into the database folder and source the sql files.
   3. Cd back to the path containing the index file and install the node modules, by running npm install.
-  4. There is also a seeds file that can be run using npm run seed, to load test users and events.
-  5. To start the app, type 'node server' in the terminal.
+  4. To start the app, type 'node server' in the terminal.
   
   ### Links
   Project Links:
