@@ -1,0 +1,213 @@
+/* Global Colors*/
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --orange: #fd7e14;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --info2: #1e96a8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #55595c;
+    --green: #8fc54f;    
+    --green-dk: #6d9142;    
+    --yellow: #f8c02b;
+    --red: #ef3f24;
+  --border-radius: 0.3rem;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+a {
+    color: var (--primary);
+    text-decoration: none !important;
+}
+a:visited, a:active {
+    color: var (--primary) !important;
+    text-decoration: none !important;
+}
+.protected a a:active a:visited{
+    color: var (--primary);
+    text-decoration: none !important;
+    
+  }
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #00A79D;
+  /*opacity: 0.5;*/
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* end sticky footer */
+/* buttons */
+.btn-warning {
+    color: #fff;
+    background-color: var(--yellow);
+    border-color: #ffc107;
+}
+
+.btn-warning:hover {
+    color: #fff !important;
+
+}
+.btn-info {
+    color: #fff;
+    background-color: var(--info);
+    border-color: var(--info2);
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: var(--info2);
+
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--blue);
+}
+
+.btn-primary:hover {
+    color: #fff;
+
+}
+
+.btn-success {
+    color: #fff;
+    background-color: var(--green) !important;
+    border-color: var(--green) !important;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: var(--green-dk) !important;
+
+}
+
+.btn-outline-secondary {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+}
+
+/* custom */
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.totop a {
+  color: var(--dark);
+}
+
+.callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 10px;
+    border-radius: 3px;
+    border-bottom-width: 10px;
+}
+.callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.callout p:last-child {
+    margin-bottom: 0;
+}
+.callout code {
+    border-radius: 3px;
+}
+.callout+.callout {
+    margin-top: -5px;
+}
+.callout-default {
+    border-left-color: #777;
+}
+.callout-default h4 {
+    color: #777;
+}
+.callout-primary {
+    border-left-color: #428bca;
+}
+.callout-primary h4 {
+    color: #428bca;
+}
+.callout-success {
+    border-left-color: #5cb85c;
+}
+.callout-success h4 {
+    color: #5cb85c;
+}
+.callout-danger {
+    border-left-color: #d9534f;
+}
+.callout-danger h4 {
+    color: #d9534f;
+}
+.callout-warning {
+    border-left-color: #f0ad4e;
+}
+.callout-warning h4 {
+    color: #f0ad4e;
+}
+.callout-info {
+    border-left-color: #5bc0de;
+}
+.callout-info h4 {
+    color: #5bc0de;
+}
+.callout h3 {
+    background-color: #efefef;
+    border-top: 1px solid #dedede;
+    margin: 5px -20px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+.text-blue {
+color: var(--blue);
+}
+
+.text-lblue {
+color: var(--cyan);
+}
+.text-orange {
+color: var(--orange);
+}
+.text-red {
+color: var(--red);
+}

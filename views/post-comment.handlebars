@@ -1,0 +1,52 @@
+<div class="container d-flex justify-content-center py-3">
+  <div class="col-md-8">
+    <div class="card my-8">
+      <div class="card-header">
+        <h3 class="card-title">{{post.title}}</h3>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{post.description}}</li>
+        <li class="list-group-item text-muted text-right">Posted by {{post.User.username}} on {{format_date
+          post.createdAt}}</li>
+        {{#if post.Comments}}
+        <li class="list-group-item">
+          <h5>Comments</h5>
+        </li>
+        {{#each post.Comments}}
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-8">
+              {{content}}</div>
+            <div class="col-4 text-muted text-right justify-content-end">
+              Comment by {{User.username}}| {{format_date createdAt}}
+            </div>
+          </div>
+        </li>
+
+        {{/each}}
+      </ul>
+      {{/if}}
+
+    </div>
+    <div class="card my-4">
+      <div class="card-header">
+        <h5 class="card-title">Add New Comment</h5>
+      </div>
+      <form id="comment-form">
+        <div class="card-body">
+          <input type="hidden" id="post-id" value="{{post.id}}" />
+
+          <label class="form-label" for="comment-content">Comment</label>
+          <textarea id="comment-content" class="form-control"></textarea>
+        </div>
+        <div class="card-footer bg-transparent">
+          <a href="/" type="submit" class="btn btn-warning"><i class="fas fa-arrow-left"></i> Back</a>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script src="/js/comment.js"></script>

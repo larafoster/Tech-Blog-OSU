@@ -1,0 +1,19 @@
+<div class="container d-flex justify-content-center py-3">
+    <div class="col-md-8">
+  {{#each posts}}
+  <div class="card my-4">
+    <h5 class="card-header">{{title}}</h5>
+    <div class="card-body">
+      <div class="small text-muted">Created on: {{format_date createdAt}}</div>
+      <p class="card-text"> {{description}}</p>
+      <figure class="text-end">
+        <figcaption class="blockquote-footer ms-5 pe-3">
+          Posted by: {{User.username}}
+        </figcaption>
+      </figure>
+    </div>
+    <div class="card-footer bg-transparent"><a class="btn btn-primary" href="/post/{{id}}"><i
+          class="far fa-comment-plus"></i> Comment</a></div>
+  </div>
+  {{/each}}
+</div></div>

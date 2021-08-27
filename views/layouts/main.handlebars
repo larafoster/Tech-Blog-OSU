@@ -1,0 +1,35 @@
+{{>head}}
+
+<body class="d-flex flex-column h-100" id="top">
+  {{>navbar}}
+  <header class="py-3 bg-light border-bottom mb-4">
+    <div class="container">
+      <div class="text-center my-5">
+        <h1 class="fw-bolder">Welcome to the TECH Blog</h1>
+        <p class="lead mb-4">This unique blog is dedicated to modern life and the technology industry.<br />
+          Here you can find answers related to tech trends and post your own tech tips. <br />
+        <div class="mt-3>">
+          <a href="/protected/new" class="btn btn-success btn-lg" type="button"><i class="fas fa-plus"></i> Add a new
+            post</a>
+          <a href="/protected" class="btn btn-warning btn-lg" type="button"><i class="fas fa-eye"></i> Manage Posts</a>
+        </div>
+        </p>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <div class="container">
+      <div class="row">
+        <!-- Blog entries-->
+        {{{body}}}
+
+      </div>
+    </div>
+  </main>
+
+  {{>footer}}
+</body>
+
+</html>
+<script src="/js/logout.js"></script>
