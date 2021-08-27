@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
-<link rel="icon" href="https://vehicle4change.org/static/ico/favicon.ico">
+  <link rel="icon" href="https://vehicle4change.org/static/ico/favicon.ico">
   <!-- CSS only -->
 
   <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -20,20 +20,35 @@
 
   <link href="/css/style.css" rel="stylesheet" />
 </head>
+
 <body class="d-flex flex-column h-100" id="top">
 
-{{>navbar}}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
+    <div class="container">
+      <a class="navbar-brand" href="/"><i class="fas fa-home"></i> Tech Blog</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li>
+            <!-- Button trigger modal -->
+            <a href="/login" type="button" class="btn btn-primary mx-3">
+              Login
+            </a>
 
-<header class="py-3 bg-light border-bottom mb-4">
+          </li> <a class="btn btn-outline-primary" href="#" type="button" id="logout">logout</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-3 bg-light border-bottom mb-4">
     <div class="container">
       <div class="text-center my-5">
         <h2 class="fw-bolder">Manage Your Blog Posts</h2>
         <p class="lead mb-4">You can create, edit or delete your blogs.
         </p>
-         <p>     
-        <a href="/protected/new" class="btn btn-success my-2"><i
-                class="fas fa-plus"></i> Create New Post</a></a>
-        <a href="/" class="btn btn-secondary my-2"> View All Posts <i class="fas fa-level-up-alt"></i></a>
+        <p>
+          <a href="/protected/new" class="btn btn-success my-2"><i class="fas fa-plus"></i> Create New Post</a></a>
+          <a href="/" class="btn btn-secondary my-2"> View All Posts <i class="fas fa-level-up-alt"></i></a>
       </div>
     </div>
   </header>
@@ -41,12 +56,20 @@
 
     <div class="container">
       <div class="row">
- 
-    {{{body}}}
-    </div>
+
+        {{{body}}}
+      </div>
     </div>
   </main>
-{{>footer}}
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <p class="float-end mb-1 totop">
+        <a href="#"><i class="fas fa-arrow-square-up fa-2x"></i> Back to top</a>
+      </p>
+      <p class="mb-0">View on <a href="https://github.com/larafoster/tech-blog" target="_blank">Github</a> --
+        Lara Foster - 2021</p>
+    </div>
+  </footer>
 </body>
 
 <script src="/js/logout.js"></script>
