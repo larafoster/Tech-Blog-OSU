@@ -1,43 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <title>Tech Blog</title>
-  <script src="https://kit.fontawesome.com/ef1290e982.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-
-  <link rel="icon" href="https://vehicle4change.org/static/ico/favicon.ico">
-  <!-- CSS only -->
-
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-
-  <link href="/css/style.css" rel="stylesheet" />
-</head>
+{{>head}}
 
 <body class="d-flex flex-column h-100" id="top">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
-    <div class="container">
-      <a class="navbar-brand" href="/"><i class="fas fa-home"></i> Tech Blog</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li>
-            <!-- Button trigger modal -->
-            <a href="/login" type="button" class="btn btn-primary mx-3">
-              Login
-            </a>
-
-          </li> <a class="btn btn-outline-primary" href="#" type="button" id="logout">logout</a>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  {{>navbar}}
   <header class="py-3 bg-light border-bottom mb-4">
     <div class="container">
       <div class="text-center my-5">
@@ -64,15 +28,8 @@
     </div>
   </main>
 
-  <footer class="footer mt-auto py-3 bg-light">
-    <div class="container">
-      <p class="float-end mb-1 totop">
-        <a href="#"><i class="fas fa-arrow-square-up fa-2x"></i> Back to top</a>
-      </p>
-      <p class="mb-0">View on <a href="https://github.com/larafoster/tech-blog" target="_blank">Github</a> --
-        Lara Foster - 2021</p>
-    </div>
-  </footer>
+  {{>footer}}
+
 </body>
 
 </html>
